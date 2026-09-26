@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GPT Interview — a cinematic, interactive showcase of modern web design and development craft." />
+  <meta name="theme-color" content="#05070b" />
+  <title>GPT Interview — Experimental Digital Showcase</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="hero-visual.svg" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-blur>
+    <a class="brand" href="#top" aria-label="GPT Interview home">
+      <span class="brand-mark" aria-hidden="true">G</span>
+      <span class="brand-copy">GPT <b>INTERVIEW</b></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#lab">Lab</a>
+      <a href="#work">Showcase</a>
+      <a href="#craft">Craft</a>
+    </nav>
+    <div class="header-actions">
+      <button class="ghost-icon" id="commandBtn" aria-label="Open command palette"><span>⌘</span><span>K</span></button>
+      <a class="btn btn-small magnetic" href="#finale">Enter the finale</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-b" aria-hidden="true"></div>
+
+      <div class="hero-copy reveal-wrap">
+        <div class="eyebrow reveal">DIGITAL EXPERIENCE / DESIGN ENGINEERING / CREATIVE CODE</div>
+        <h1 class="hero-title" aria-label="This is what happens when design and code stop compromising">
+          <span class="line reveal">THIS IS WHAT HAPPENS</span>
+          <span class="line reveal">WHEN <em>DESIGN</em> AND <em>CODE</em></span>
+          <span class="line reveal">STOP COMPROMISING.</span>
+        </h1>
+        <p class="hero-lead reveal">A one-page interview piece built to show range: cinematic art direction, interactive systems, responsive engineering, accessibility, performance, and motion that actually serves the experience.</p>
+        <div class="hero-actions reveal">
+          <a class="btn magnetic" href="#lab">Explore the impossible</a>
+          <button class="text-link" id="tourBtn">Start guided tour <span>↘</span></button>
+        </div>
+        <div class="hero-meta reveal" aria-label="Project details">
+          <div><span class="metric-label">Build</span><strong>Vanilla HTML/CSS/JS</strong></div>
+          <div><span class="metric-label">Dependencies</span><strong>0</strong></div>
+          <div><span class="metric-label">Theme</span><strong>Adaptive / Motion-aware</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-visual parallax-layer" data-depth="0.35" aria-hidden="true">
+        <img src="hero-visual.svg" alt="" />
+        <div class="holo-card card-a">SYSTEM ONLINE</div>
+        <div class="holo-card card-b">60 FPS TARGET</div>
+        <div class="holo-card card-c">NO FRAMEWORK</div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section class="signal-strip" aria-label="Highlights">
+      <div class="signal-track" aria-hidden="true">
+        <span>SCROLL STORYTELLING</span><i></i><span>MAGNETIC UI</span><i></i><span>CURSOR REACTIVE LIGHT</span><i></i><span>CANVAS PARTICLES</span><i></i><span>3D TILT</span><i></i><span>COMMAND PALETTE</span><i></i><span>REDUCED MOTION</span><i></i><span>KEYBOARD FIRST</span><i></i>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="capabilities">
+      <div class="section-kicker reveal">01 / CAPABILITIES</div>
+      <div class="section-head grid-2">
+        <h2 class="display reveal">A website can feel like software, cinema and a physical object at once.</h2>
+        <p class="section-copy reveal">The best experiences are not about throwing effects at a page. They are about orchestrating attention. Every interaction below has a purpose: orientation, hierarchy, feedback, delight or proof of craft.</p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="cap-card tilt reveal" data-accent="A">
+          <div class="cap-number">01</div>
+          <div class="cap-icon" aria-hidden="true">◌</div>
+          <h3>Spatial interfaces</h3>
+          <p>Depth, parallax, layered translucency and perspective without relying on heavyweight 3D libraries.</p>
+          <div class="cap-demo depth-demo" aria-hidden="true"><span></span><span></span><span></span></div>
+        </article>
+        <article class="cap-card tilt reveal" data-accent="B">
+          <div class="cap-number">02</div>
+          <div class="cap-icon" aria-hidden="true">⌁</div>
+          <h3>Motion systems</h3>
+          <p>Scroll reveals, kinetic typography and microinteractions tuned to feel deliberate rather than decorative.</p>
+          <div class="cap-demo waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="cap-card tilt reveal" data-accent="C">
+          <div class="cap-number">03</div>
+          <div class="cap-icon" aria-hidden="true">⌘</div>
+          <h3>Software-like UX</h3>
+          <p>Keyboard shortcuts, command palettes, focus states and responsive controls make websites feel genuinely interactive.</p>
+          <div class="cap-demo mini-terminal" aria-hidden="true"><b>&gt;</b><span>run experience</span><i></i></div>
+        </article>
+        <article class="cap-card tilt reveal" data-accent="D">
+          <div class="cap-number">04</div>
+          <div class="cap-icon" aria-hidden="true">∞</div>
+          <h3>Graceful performance</h3>
+          <p>No framework dependency. Motion pauses where appropriate and respects reduced-motion preferences automatically.</p>
+          <div class="cap-demo bars" aria-hidden="true"><span style="--v:92%"></span><span style="--v:78%"></span><span style="--v:97%"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section lab" id="lab">
+      <div class="lab-stage">
+        <div class="section-kicker reveal">02 / INTERACTION LAB</div>
+        <div class="lab-grid">
+          <div class="lab-copy">
+            <h2 class="display reveal">Things most people do not expect a normal webpage to do.</h2>
+            <p class="section-copy reveal">Move your pointer. Tilt the cards. Open the command palette. Toggle the signal field. Every element is custom-built with the platform itself.</p>
+            <div class="lab-controls reveal">
+              <button class="chip active" data-mode="particles">Particle field</button>
+              <button class="chip" data-mode="grid">Vector grid</button>
+              <button class="chip" data-mode="quiet">Quiet mode</button>
+            </div>
+          </div>
+          <div class="lab-console reveal" data-spotlight>
+            <div class="console-top"><span></span><span></span><span></span><b>LIVE ENVIRONMENT</b></div>
+            <div class="console-body">
+              <div class="scanline"></div>
+              <div class="live-orb"></div>
+              <div class="console-stats">
+                <div><span>POINTER VECTOR</span><strong id="pointerReadout">x: 0.00 / y: 0.00</strong></div>
+                <div><span>VIEWPORT</span><strong id="viewportReadout">—</strong></div>
+                <div><span>MOTION</span><strong id="motionReadout">ENABLED</strong></div>
+                <div><span>FRAME TIME</span><strong id="frameReadout">~16 ms</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase" id="work">
+      <div class="section-kicker reveal">03 / SHOWCASE</div>
+      <div class="section-head grid-2">
+        <h2 class="display reveal">Three visual languages. One system underneath.</h2>
+        <p class="section-copy reveal">Each concept below is fictitious and exists only to demonstrate art direction, layout systems and interaction patterns.</p>
+      </div>
+
+      <div class="project-stack">
+        <article class="project-card project-one reveal" data-project="01">
+          <div class="project-media"><img src="project-aurora.svg" alt="Abstract luminous architecture concept in violet and cyan" /></div>
+          <div class="project-overlay"></div>
+          <div class="project-content">
+            <div class="project-meta"><span>01</span><span>IMMERSIVE BRAND</span></div>
+            <h3>Aurora Systems</h3>
+            <p>Editorial type, depth, glow and a responsive visual system designed to feel simultaneously technical and luxurious.</p>
+            <button class="project-open" data-modal="aurora">Open case study <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card project-two reveal" data-project="02">
+          <div class="project-media"><img src="project-monolith.svg" alt="Minimal architectural monolith scene in warm neutral tones" /></div>
+          <div class="project-overlay"></div>
+          <div class="project-content">
+            <div class="project-meta"><span>02</span><span>EDITORIAL COMMERCE</span></div>
+            <h3>Monolith Objects</h3>
+            <p>A deliberately restrained visual system proving the same codebase can move from maximal to minimal without losing polish.</p>
+            <button class="project-open" data-modal="monolith">Open case study <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card project-three reveal" data-project="03">
+          <div class="project-media"><img src="project-kinetic.svg" alt="High energy red and silver digital grid concept" /></div>
+          <div class="project-overlay"></div>
+          <div class="project-content">
+            <div class="project-meta"><span>03</span><span>SPORT / DATA</span></div>
+            <h3>Kinetic Division</h3>
+            <p>Dense data hierarchy, motion cues and sharp compositional rhythm built for high-frequency information environments.</p>
+            <button class="project-open" data-modal="kinetic">Open case study <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section craft" id="craft">
+      <div class="section-kicker reveal">04 / TECHNICAL CRAFT</div>
+      <div class="craft-grid">
+        <div class="craft-main reveal">
+          <h2 class="display">The invisible work is what makes the visible work feel expensive.</h2>
+          <div class="code-window" aria-label="Example engineering principles">
+            <div class="code-bar"><span></span><span></span><span></span><b>experience.js</b></div>
+            <pre><code><span class="c-muted">// Respect the human before the effect.</span>
+<span class="c-key">const</span> motion = matchMedia(<span class="c-str">'(prefers-reduced-motion: reduce)'</span>);
+
+<span class="c-key">if</span> (!motion.matches) {
+  experience.<span class="c-fn">enableDepth</span>();
+  experience.<span class="c-fn">enableKinetics</span>();
+}
+
+<span class="c-muted">// Progressive enhancement, never dependency.</span>
+experience.<span class="c-fn">enhance</span>({
+  keyboard: <span class="c-bool">true</span>,
+  pointer: <span class="c-bool">true</span>,
+  touch: <span class="c-bool">true</span>
+});</code></pre>
+          </div>
+        </div>
+        <div class="craft-side">
+          <div class="audit-card reveal"><span>ACCESSIBILITY</span><strong>Keyboard-aware</strong><p>Visible focus, semantic structure, skip link, dialog handling and reduced-motion support.</p></div>
+          <div class="audit-card reveal"><span>PERFORMANCE</span><strong>Zero framework tax</strong><p>SVG visuals, native APIs and deferred interaction logic keep the experience portable.</p></div>
+          <div class="audit-card reveal"><span>RESPONSIVE</span><strong>Fluid, not merely stacked</strong><p>Typography, spacing, controls and interaction density adapt continuously with the viewport.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section metric-section">
+      <div class="metric-shell reveal" data-spotlight>
+        <div class="metric-intro"><span>DEMO SYSTEM STATUS</span><h2>Built to feel alive.</h2><p>These are live interface diagnostics, not business claims.</p></div>
+        <div class="metric-grid">
+          <div class="metric-block"><span>Sections observed</span><strong data-counter="9">0</strong></div>
+          <div class="metric-block"><span>External libraries</span><strong data-counter="0">0</strong></div>
+          <div class="metric-block"><span>Interactive systems</span><strong data-counter="12">0</strong></div>
+          <div class="metric-block"><span>Design modes</span><strong data-counter="3">0</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section finale" id="finale">
+      <div class="finale-bg" aria-hidden="true"></div>
+      <div class="finale-content reveal">
+        <div class="section-kicker">05 / FINALE</div>
+        <h2>THE INTERVIEW<br/><em>IS THE WEBSITE.</em></h2>
+        <p>No résumé theatre. No borrowed template. Just the work, running in the browser.</p>
+        <div class="finale-actions">
+          <button class="btn magnetic" id="replayBtn">Replay the experience</button>
+          <button class="text-link" id="openCommandBtn">Open command palette <span>⌘K</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>GPT INTERVIEW / DEMONSTRATION PORTFOLIO CONCEPT</div>
+    <div>BUILT WITH HTML + CSS + JAVASCRIPT</div>
+    <div id="year"></div>
+  </footer>
+
+  <dialog id="commandPalette" class="command-palette">
+    <form method="dialog">
+      <div class="command-head"><span>Command palette</span><button value="cancel" aria-label="Close">×</button></div>
+      <label class="command-search"><span>⌘</span><input id="commandInput" type="search" placeholder="Type a command…" autocomplete="off" /></label>
+      <div class="command-list" role="listbox" aria-label="Commands">
+        <button type="button" data-command="top"><span>Go to hero</span><kbd>H</kbd></button>
+        <button type="button" data-command="lab"><span>Open interaction lab</span><kbd>L</kbd></button>
+        <button type="button" data-command="work"><span>Jump to showcase</span><kbd>W</kbd></button>
+        <button type="button" data-command="motion"><span>Toggle motion</span><kbd>M</kbd></button>
+        <button type="button" data-command="contrast"><span>Toggle contrast mode</span><kbd>C</kbd></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="projectDialog" class="project-dialog">
+    <button class="dialog-close" aria-label="Close project">×</button>
+    <div class="project-dialog-inner">
+      <span class="dialog-kicker">CASE STUDY / DEMO</span>
+      <h2 id="dialogTitle">Project</h2>
+      <p id="dialogText"></p>
+      <div class="dialog-grid"><div><span>Focus</span><strong id="dialogFocus"></strong></div><div><span>Technique</span><strong id="dialogTechnique"></strong></div><div><span>Outcome</span><strong>Demonstration only</strong></div></div>
+    </div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
